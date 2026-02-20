@@ -23,7 +23,13 @@ export interface Profile {
   profile_photo: string;
   contact_email: string;
   contact_phone: string;
-  social_links: string;
+  location: string;
+  social_links: {
+    twitter: string;
+    linkedin: string;
+    facebook: string;
+    instagram: string;
+  }
 }
 
 export interface Category {

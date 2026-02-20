@@ -43,6 +43,15 @@ export default function App() {
     }
   }
 
+  const fetchProfile = async () => {
+    try {
+      const { data } = await supabase.from("profile").select().eq('slug', 'personal-info').single();
+      setProfile(data);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
   // const fetchData = async () => {
   //   try {
   //     const [artRes, catRes, profRes, setRes] = await Promise.all([
@@ -64,6 +73,7 @@ export default function App() {
     // fetchData();
     fetchArticles();
     fetchCategories();
+    fetchProfile();
 
     // Simple hash-based routing + path-based fallback
     const handleHashChange = () => {

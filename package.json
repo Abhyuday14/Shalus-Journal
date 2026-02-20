@@ -10,7 +10,8 @@
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "seed:articles": "tsx seed/seedArticles.ts",
-    "seed:categories": "tsx seed/seedCategories.ts"
+    "seed:categories": "tsx seed/seedCategories.ts",
+    "seed:profile": "tsx seed/seedProfile.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

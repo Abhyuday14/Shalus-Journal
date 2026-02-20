@@ -20,7 +20,7 @@ async function seedCategories() {
   if (error) {
     console.error('❌ Error inserting categories:', error)
   }
-  console.log('✅ categories seeded successfully')
+  console.log('✅ Categories seeded successfully')
 }
 
 seedCategories()

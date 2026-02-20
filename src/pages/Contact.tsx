@@ -40,7 +40,7 @@ export const ContactPage = ({ profile }: { profile: Profile | null }) => {
                 </div>
                 <div>
                   <p className="text-sm text-deep-charcoal/40 font-bold uppercase tracking-widest">Email</p>
-                  <p className="text-xl font-medium">{profile?.contact_email || 'hello@shalusachdeva.com'}</p>
+                  <p className="text-xl font-medium">{profile?.contact_email}</p>
                 </div>
               </div>
               <div className="flex items-center gap-6">
@@ -49,7 +49,7 @@ export const ContactPage = ({ profile }: { profile: Profile | null }) => {
                 </div>
                 <div>
                   <p className="text-sm text-deep-charcoal/40 font-bold uppercase tracking-widest">Phone</p>
-                  <p className="text-xl font-medium">{profile?.contact_phone || '+1 (555) 123-4567'}</p>
+                  <p className="text-xl font-medium">{profile?.contact_phone}</p>
                 </div>
               </div>
               <div className="flex items-center gap-6">
@@ -58,7 +58,7 @@ export const ContactPage = ({ profile }: { profile: Profile | null }) => {
                 </div>
                 <div>
                   <p className="text-sm text-deep-charcoal/40 font-bold uppercase tracking-widest">Location</p>
-                  <p className="text-xl font-medium">New Delhi, India / Global</p>
+                  <p className="text-xl font-medium">{profile?.location}</p>
                 </div>
               </div>
             </div>
