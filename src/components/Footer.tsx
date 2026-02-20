@@ -27,9 +27,9 @@ export const Footer = () => (
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"><Instagram size={20} /></a>
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"><Mail size={20} /></a>
             </div>
-            <a href="#admin-dashboard" className="text-sage-green/40 hover:text-white text-xs uppercase tracking-widest font-bold flex items-center gap-2">
+            {/* <a href="#admin-dashboard" className="text-sage-green/40 hover:text-white text-xs uppercase tracking-widest font-bold flex items-center gap-2">
               <User size={14} /> Admin Login
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-sage-green/60 text-sm">

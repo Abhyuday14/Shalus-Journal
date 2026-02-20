@@ -121,7 +121,7 @@ export default function App() {
       <main className="flex-grow">
         {renderView()}
       </main>
-      {/* {!isAdminView && <Footer />} */}
+      <Footer />
     </div>
   );
 }
