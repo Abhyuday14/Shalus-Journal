@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Investigative",
+      "slug": "investigative",
+      "color": "#2D5016"
+    },
+    {
+      "name": "Environment",
+      "slug": "environment",
+      "color": "#A4C3A2"
+    },
+    {
+      "name": "Social Issues",
+      "slug": "social-issues",
+      "color": "#8B7355"
+    },
+    {
+      "name": "Features",
+      "slug": "features",
+      "color": "#DAA520"
+    }
+  ]

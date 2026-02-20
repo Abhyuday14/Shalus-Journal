@@ -34,6 +34,15 @@ export default function App() {
     }
   }
 
+  const fetchCategories = async () => {
+    try {
+      const { data } = await supabase.from("categories").select();
+      setCategories(data);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
   // const fetchData = async () => {
   //   try {
   //     const [artRes, catRes, profRes, setRes] = await Promise.all([
@@ -54,6 +63,7 @@ export default function App() {
   useEffect(() => {
     // fetchData();
     fetchArticles();
+    fetchCategories();
 
     // Simple hash-based routing + path-based fallback
     const handleHashChange = () => {
